@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text view for result view-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/background_border_cyan"
+    android:id="@+id/relativeBasic">
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="60dp"
+        android:text="Result:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="60dp"
+        android:text="0"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <!--take the input first number-->
+    <EditText
+        android:id="@+id/first_no"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:inputType="number" />
+
+
+
+
+    <!-- take input for second number -->
+
+    <EditText
+        android:id="@+id/second_no"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="130dp"
+        android:inputType="number"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <!-- button for run add logic and view result -->
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="200dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="200dp"
+        android:text="Sub" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="200dp"
+        android:text="Mul" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="200dp"
+        android:text="Div" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>
